@@ -10,13 +10,11 @@ import java.io.InputStreamReader;
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        int date = Integer.parseInt(bufferedReader.readLine());
-        String name = bufferedReader.readLine();
+        int age = Integer.parseInt(reader.readLine());
+        String name = reader.readLine();
 
-        bufferedReader.close();
-
-        System.out.println(name + " захватит мир через " + date + " лет. Му-ха-ха!");
+        System.out.println(name + " захватит мир через "+age+" лет. Му-ха-ха!");
     }
 }
