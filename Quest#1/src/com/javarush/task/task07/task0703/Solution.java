@@ -15,5 +15,23 @@ import java.io.InputStreamReader;
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+
+        String[] arrStr = new String[10];
+        int[] arrNum = new int[10];
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        for (int i = 0; i < 10; i++)
+        {
+            arrStr[i] = reader.readLine();
+            arrNum[i] = arrStr[i].length();
+        }
+
+        reader.close();
+
+        for (int i = 0; i < 10; i++)
+        {
+            System.out.println(arrNum[i]);
+        }
     }
 }
