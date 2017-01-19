@@ -13,7 +13,7 @@ public class Solution {
         String sourceFileName = reader.readLine();
         String destinationFileName = reader.readLine();
 
-        InputStream fileInputStream = getInputStream(destinationFileName);
+        InputStream fileInputStream = getInputStream(sourceFileName);
         OutputStream fileOutputStream = getOutputStream(destinationFileName);
 
         int count = 0;
